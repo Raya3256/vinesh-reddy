@@ -14,7 +14,9 @@ import java.util.*;
         return true;
     }
     public static void main(String[] args){
-        int n=31;
+     Scanner sc = new Scanner(System.in);
+      System.out.println("enter a number : ");
+     int n = sc.nextInt();
         boolean isprime = checkPrime(n);
         if(isprime){
             System.out.println(n + " is a prime number.");
@@ -22,4 +24,5 @@ import java.util.*;
             System.out.println(n + " is not a prime number.");
         }
     }
+       sc.close();
 }
